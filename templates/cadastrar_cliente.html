@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Cliente</title>
+</head>
+<body>
+    <h1>Cadastrar Cliente</h1>
+    <form action="{{ url_for('cadastrar_cliente') }}" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

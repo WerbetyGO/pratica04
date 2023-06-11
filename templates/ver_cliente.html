@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Cliente</title>
+</head>
+<body>
+    <h1>Detalhes do Cliente</h1>
+    <p><strong>ID:</strong> {{ cliente_id }}</p>
+    <p><strong>Nome:</strong> {{ cliente.nome }}</p>
+    <p><strong>Endereço:</strong> {{ cliente.endereco }}</p>
+    <p><strong>Telefone:</strong> {{ cliente.telefone }}</p>
+    <p><a href="{{ url_for('listar_clientes') }}">Voltar</a></p>
+</body>
+</html>
